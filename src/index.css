@@ -86,7 +86,7 @@
 }
 
 .content p:nth-of-type(1) {
-  background-image: linear-gradient(to right, rgb(252, 56, 128), #c817e0);
+  background-image: linear-gradient(to right, #e62878, #7d277e);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -158,7 +158,7 @@
   font-weight: 800;
   line-height: 0.8em;
   text-transform: uppercase;
-  background: linear-gradient(76deg, #b32165 0%, #70056e 100%);
+  background: linear-gradient(76deg, #e62878 0%, #7d277e 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -191,10 +191,14 @@
   margin-top: .6em;
   margin-bottom: .6em;
   font-size: 2em;
+  background: linear-gradient(76deg, #f5eff2 0%, #cbc5c9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-description {
-  font-size: 1.1em;
+  font-size: 1em;
   height: 100%;
   
   /* text-align: justify; */
@@ -202,12 +206,12 @@
   /* padding-top: 12em; */
   position: absolute;
   backdrop-filter: blur(12px);
-  font-weight: 300;
+  font-weight: 200;
   top: 0;
-  width: 28em;
+  width: 35em;
   left: 0;
   background-color: rgba(0, 0, 0, 0.582);
-  color: linear-gradient(76deg, #b32165 0%, #70056e 100%);
+  color: linear-gradient(76deg, #e62878 0%, #7d277e 100%);
 }
 
 nav {
@@ -302,6 +306,12 @@ body:hover {
 .footer-icons a {
   color: white;
 }
+
+.footer-icons a:hover {
+  color: #e62878;
+}
+
+
 
 .footerel {
   position: fixed;
@@ -417,8 +427,9 @@ body:hover {
 
 
 .card-buy {
-  background: linear-gradient(44deg, rgb(237, 73, 100), rgb(189, 10, 10));
+  background: linear-gradient(44deg, #e62878, rgb(189, 10, 10));
   display: flex;
+  cursor: pointer;
   background-size: 130%;
   background-position: right;
   align-items: center;
@@ -447,8 +458,9 @@ body:hover {
 
 
 .card-remove {
-  background: linear-gradient(75deg, #ca285b 0%, #a937c6 48.44%, #7d12bb 100%);
+  background: linear-gradient(75deg, #e62878, #a937c6 48.44%, #7d277e 100%);
   background-size: 130%;
+  cursor: pointer;
   box-shadow:  3px 3px 2px 1px rgba(0, 0, 0, 0.136);
   background-position: right;
   display: flex;
@@ -489,7 +501,7 @@ body:hover {
 
 
 .nav-right-side {
-  color: red;
+  /* color: red; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -502,28 +514,24 @@ body:hover {
   user-select: none;
 }
 
+.about {
+  color: rgb(228, 228, 228);
+}
+
 .games {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(228, 228, 228);
 }
 
 .contact {
   text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
-.form-container {
-  width: 30em;
-  height: 40em;
-  border-radius: 24px;
-  background-color: rgba(255, 255, 255, 0.314);
-  margin: 2em auto;
+  color: rgb(228, 228, 228); 
 }
  
 .sign-in {
   color: rgb(246, 246, 246);
   box-shadow: inset 3px 3px 4px 1px rgba(106, 106, 106, 0.216);
-  background: linear-gradient(111deg, #ee0c76 0%, #9c16ea 100%);
+  background: linear-gradient(111deg, #e62878 0%, #7d277e 100%);
   /* background: linear-gradient(111deg, #550494 0%, #037B96 100%); */
   background-size: 130%;
   background-position: left;
@@ -546,13 +554,12 @@ body:hover {
 
 nav a {
   text-decoration: none;
-  color: rgb(229, 229, 229);
   font-weight: 200;
   font-size: 1rem;
 }
 
 nav a:hover {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .wrapper {
@@ -560,7 +567,7 @@ nav a:hover {
   /* overflow: scroll; */
   justify-content: space-between;
   max-width: 80em;
-  height: 50em;
+  height: 40em;
   margin: auto;
   /* background-color: rgb(199, 35, 35); */
 }
@@ -588,18 +595,18 @@ nav a:hover {
 }
 
 .checkout-button {
-  background: linear-gradient(110deg, #5d0dae 0%, #9c51b3 48.44%, #db0574 100%);
+  background: linear-gradient(110deg, #7d277e 0%, #ec6da8 48.44%, #e62878 100%);
   padding: .5em;
   user-select: none;
   display: flex;
   margin-top: .4em;
   justify-content: center;
-  color: rgb(246, 246, 246);
+  color: rgb(249, 249, 249);
   border-radius: 8px;
   background-size: 120%;
   background-position: right;
-  font-size: 1.8rem;
-  font-weight: 300;
+  font-size: 1.3rem;
+  font-weight: 200;
   transition: background-position .2s, color .2s, box-shadow .2s;
   box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.099);
 }
@@ -607,21 +614,21 @@ nav a:hover {
 .button {
   position: absolute;
   left: 1.8em;
-  bottom: 15em;
+  bottom: 20em;
   text-decoration: none;
   width: 8em;
-  background: linear-gradient(110deg, #5d0dae 0%, #9c51b3 48.44%, #db0574 100%);
+  background: linear-gradient(111deg, #e62878 0%, #7d277e 100%);
   padding: .5em;
   user-select: none;
   display: flex;
   margin-top: .4em;
   justify-content: center;
-  color: rgb(246, 246, 246);
+  color: rgb(249, 249, 249);
   border-radius: 8px;
   background-size: 120%;
   background-position: right;
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-size: 1.1rem;
+  font-weight: 200;
   transition: background-position .2s, color .2s, box-shadow .2s;
   box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.099);
 }
@@ -631,6 +638,9 @@ nav a:hover {
     color: white;
     cursor: pointer;
 }
+
+
+
 .button:focus {
   outline: none;
 }
@@ -679,6 +689,8 @@ nav a {
   align-items: center;
 }
 
+
+
 .discard {
   color: white;
   margin-left: .5em;
@@ -713,7 +725,7 @@ nav a {
   /* border: 1px solid rgba(214, 202, 222, 0.199); */
   
   background-color: rgb(19, 19, 19);
-  border-radius: 12px;
+  border-radius: 24px;
   box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.075);
   padding: 1em;
   display: flex;
@@ -778,9 +790,207 @@ nav a {
   grid-template: auto auto auto / repeat(3, 1fr);
 }
 
-
 .logo-style {
   width: 2.9em;
   margin: none;
   border-radius: none;
+}
+
+.form-container {
+  width: 30em;
+  height: 40em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  background-color: rgb(19, 19, 19);
+  margin: 2em auto;
+  padding: 2em;
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1em;
+}
+
+.contact-form-container {
+  width: 30em;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  /* background-color: rgb(19, 19, 19); */
+  /* margin: 2em auto; */
+
+  display: flex;
+  transition: width 0.6s ease;
+}
+
+
+.form--input {
+  height: 3em;
+  padding: 1em;
+  font-weight: 200;
+  font-size: 1rem;
+  color: white;
+  border-radius: 24px;
+  border: none;
+  background: rgba(187, 174, 182, 0.245);
+  box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.084)
+}
+
+.form--input::placeholder {
+  color: white;
+  font-weight: 200;
+}
+
+
+.form--marketing {
+  color: white;
+
+}
+
+
+.form--submit {
+  color: rgb(246, 246, 246);
+  background: linear-gradient(111deg, #e62878 0%, #7d277e 100%);
+  /* background: linear-gradient(111deg, #550494 0%, #037B96 100%); */
+  background-size: 130%;
+  background-position: left;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: .6em 1.2em;
+  transition: background-position 0.3s ease;
+  font-size: 1rem;
+  font-weight: 300;
+  border: none;
+  box-shadow: 3px 3px 1px 1px rgba(11, 11, 11, 0.182);
+}
+
+.form--submit:hover {
+  background-position: right;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  margin-right: 1em;
+}
+
+.signup {
+  
+}
+
+.sign-title {
+  color: white;
+  background: linear-gradient(76deg, #e62878 0%, #7d277e 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sign-desc {
+  color: white;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+
+
+.contact-wrapper {
+  display: flex;
+  background-color: rgb(19, 19, 19);
+  padding: 2em;
+  border-radius: 24px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.textareaform {
+  padding: 1em;
+  font-weight: 200;
+  height: 10em;
+  margin-bottom: auto;
+  color: white;
+  font-size: 1rem;
+  border-radius: 24px;
+  border: none;
+  background: rgba(187, 174, 182, 0.245);
+  box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.084)
+}
+
+.textareaform::placeholder {
+  color: white;
+}
+
+.contact-title {
+  font-size: 4em;
+  font-weight: 800;
+  line-height: 0.8em;
+  line-height: 0.8em;
+  background: linear-gradient(76deg, #e62878 0%, #7d277e 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-title-des {
+  background: linear-gradient(76deg, #f5eff2 0%, #cbc5c9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: .6em;
+  margin-bottom: .6em;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+
+.contact
+
+.contact-header {
+  background: linear-gradient(76deg, #e62878 0%, #7d277e 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.2rem;
+  margin-bottom: 1em;
+}
+
+.contact-header2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  background: linear-gradient(76deg, #e62878 0%, #7d277e 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.contact-styled-h {
+  background: linear-gradient(76deg, #e62878 0%, #7d277e 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+
+.contact-desc {
+  color: white;
+  border-bottom: 1px solid #dd3f818c;
+  padding-bottom: 1.3em;
+  margin-bottom: 1em;
 }

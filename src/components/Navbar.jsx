@@ -7,7 +7,7 @@ export default function Navbar() {
 
     const styles = {
         paddingBottom: ".5em",
-        borderBottom: "2px solid white",
+        borderBottom: "2px solid #e62878",
         fontWeight: 400,
         color: "white",
         marginTop: ".6em"
