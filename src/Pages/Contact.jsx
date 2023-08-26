@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
     return(
         <div>
-            <h1>CONTACT PAGE</h1>
+            <div className="form-container"></div>
         </div>
     )
 }
