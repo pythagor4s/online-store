@@ -75,7 +75,14 @@ function TicTacToe() {
 
   return (
     
-    <div className="App">
+    <div>
+      <h1 className="tic-name">THIS WEEK'S FREE GAME</h1>
+      <p className="tic-description-1">Play as either <span className="animate-x">X</span> or <span className="animate-o">O</span></p>
+      <p className="tic-description-2">The first person to mark three of their signs in a horizontal, vertical, or diagonal row is the winner.</p>
+
+
+
+      <div className="App">
       <div className="board">
         <div className="row">
           <Square
@@ -139,6 +146,8 @@ function TicTacToe() {
         </div>
       </div>
     </div>
+    </div>
+    
   );
 }
 

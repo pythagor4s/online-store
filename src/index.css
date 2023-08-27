@@ -142,7 +142,7 @@
 
 .main-container {
   /* margin-left: 20em; */
-  background-color: rgba(113, 227, 132, 0.722);
+  /* background-color: rgba(113, 227, 132, 0.722); */
   /* margin-right: 20em; */
   margin: 1.5em 20em;
   /* border: 1px solid rgba(233, 233, 233, 0.238);
@@ -892,9 +892,9 @@ input[type="checkbox"] {
   margin-right: 1em;
 }
 
-.signup {
+/* .signup {
   
-}
+} */
 
 .sign-title {
   color: white;
@@ -1109,6 +1109,41 @@ input[type="checkbox"] {
   background-position: left;
 }
 
+.animate-x {
+  background: linear-gradient(45deg, #e62878 0%, #7d277e 100%, #f7e1f7 100%);
+  background-clip: text;
+  background-size: 190%;
+  background-position: right;
+  font-weight: 800;
+  /* transition: background-position 0.2s ease; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: backgroundMove 3s linear infinite;
+}
+
+.animate-o {
+  background: linear-gradient(76deg, #e0e1e1 0%, #28e6c0 0%, #27627e 100%);
+  background-clip: text;
+  background-size: 190%;
+  background-position: right;
+  font-weight: 800;
+  /* transition: background-position 0.2s ease; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: backgroundMove 3s linear infinite;
+}
+
+@keyframes backgroundMove {
+  0%, 100% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+}
+
+
+
 
 /* .square:active {
   background-color: #bda5c781;
@@ -1149,4 +1184,48 @@ input[type="checkbox"] {
 
 .o {
   color: green;
+}
+
+
+/* .shit {
+  color: red;
+} */
+
+
+.tic-name {
+  font-size: 4em;
+  font-weight: 800;
+  line-height: 0.8em;
+  text-transform: uppercase;
+  background: linear-gradient(76deg, #e62878 0%, #7d277e 100%);
+  background-clip: text;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  user-select: none;
+}
+
+.tic-description-1 {
+  margin-top: .6em;
+  font-weight: 600;
+  /* margin-bottom: .6em; */
+  font-size: 2em;
+  background: linear-gradient(76deg, #f5eff2 0%, #cbc5c9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  user-select: none;
+}
+
+.tic-description-2 {
+  user-select: none;
+  margin-bottom: 1.5em;
+  font-size: 1.2rem;
+  background: linear-gradient(76deg, #f5eff2 0%, #cbc5c9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-weight: 300;
 }
