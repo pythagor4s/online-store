@@ -1155,6 +1155,7 @@ input[type="checkbox"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .board {
@@ -1164,6 +1165,7 @@ input[type="checkbox"] {
   padding: 2em;
   /* border: 5px solid rgb(172, 59, 59); */
   display: flex;
+  border: 1px solid rgba(255, 240, 252, 0.121);
   /* margin: auto; */
   flex-direction: column;
   border-radius: 20px;
