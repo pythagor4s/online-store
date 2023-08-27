@@ -75,6 +75,7 @@ export default [
         key: 7,
         path: "",
         image: "./src/assets/image7.png"
+        
     },
     {
         name: "Minecraft",

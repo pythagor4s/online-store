@@ -5,6 +5,7 @@ import About from './Pages/About'
 import Contact from './Pages/Contact'
 import Login from './Pages/Login'
 import Games from './Pages/Games'
+import TicTacToe from './Pages/TicTacToe'
 
 
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="games" element={<Games />} />
           <Route path="contact" element={<Contact />} />
           <Route path="login" element={<Login />} />
+          <Route path="tictactoe" element={<TicTacToe />} />
         </Route>
       </Routes>
     </BrowserRouter>

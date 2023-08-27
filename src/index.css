@@ -142,7 +142,7 @@
 
 .main-container {
   /* margin-left: 20em; */
-  background-color: rgba(113, 227, 132, 0);
+  background-color: rgba(113, 227, 132, 0.722);
   /* margin-right: 20em; */
   margin: 1.5em 20em;
   /* border: 1px solid rgba(233, 233, 233, 0.238);
@@ -211,7 +211,12 @@
   width: 35em;
   left: 0;
   background-color: rgba(0, 0, 0, 0.582);
-  color: linear-gradient(76deg, #e62878 0%, #7d277e 100%);
+  color: #f5eff2;
+  /* color: linear-gradient(76deg, #e62878 0%, #7d277e 100%); */
+ /*  background: linear-gradient(76deg, #f5eff2 0%, #cbc5c9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
 nav {
@@ -900,6 +905,8 @@ input[type="checkbox"] {
   -webkit-text-fill-color: transparent;
 }
 
+
+
 .sign-desc {
   user-select: none;
   background: linear-gradient(76deg, #f5eff2 0%, #cbc5c9 100%);
@@ -1004,4 +1011,142 @@ input[type="checkbox"] {
   border-bottom: 1px solid #dd3f818c;
   padding-bottom: 1.3em;
   margin-bottom: 1em;
+}
+
+/* TICTACTOE TICTACTOE TICTACTOE TICTACTOE TICTACTOE TICTACTOE  */
+/* TICTACTOE TICTACTOE TICTACTOE TICTACTOE TICTACTOE TICTACTOE  */
+/* TICTACTOE TICTACTOE TICTACTOE TICTACTOE TICTACTOE TICTACTOE  */
+
+.x::after {
+  content: "";
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 16px;
+  position: absolute;
+  background-color: rgba(107, 107, 107, 0.113);
+  box-shadow: 0px 0px 5px 2px rgba(10, 10, 10, 0.243);
+ /*  z-index: -1; */
+  mix-blend-mode: multiply;
+}
+
+.o::before {
+  content: "";
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 16px;
+  position: absolute;
+  background-color: rgba(107, 107, 107, 0.113);
+  box-shadow: 0px 0px 5px 2px rgba(10, 10, 10, 0.243);
+  /* z-index: -1; */
+  mix-blend-mode: multiply;
+}
+
+.o {
+  width: 2em;
+  flex: 33%;
+  z-index: 2;
+  /* height: 100%; */
+  /* border: 5px solid rgb(0, 0, 0); */
+  /* border-image: linear-gradient(to right, #f06, #9f6) 1; */
+  cursor: pointer;
+  display: grid;
+
+  place-items: center;
+  font-size: 30px;
+  background: linear-gradient(76deg, #e0e1e1 0%, #28e6c0 0%, #27627e 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 190%;
+  background-position: right;
+  transition: background-position 0.2s ease;
+  font-size: 5em;
+  font-weight: 700;
+  border-radius: 24px;
+
+  /* background: linear-gradient(111deg, #e62878 0%, #7d277e 100%);
+  background-size: 140%;
+  background-position: left;
+  transition: background-position 0.3s ease;
+  user-select: none; */
+
+}
+
+.x {
+  width: 2em;
+  flex: 33%;
+  z-index: 2;
+  /* height: 100%; */
+  /* border: 5px solid rgb(0, 0, 0); */
+  /* border-image: linear-gradient(to right, #f06, #9f6) 1; */
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  background: linear-gradient(45deg, #e62878 0%, #7d277e 100%, #f7e1f7 100%);
+  background-clip: text;
+  background-size: 190%;
+  background-position: right;
+  transition: background-position 0.2s ease;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5em;
+  font-weight: 700;
+  border-radius: 24px;
+
+  /* background: linear-gradient(111deg, #e62878 0%, #7d277e 100%);
+  background-size: 130%;
+  background-position: left;
+  transition: background-position 0.3s ease;
+  user-select: none; */
+
+}
+
+.x:hover {
+  background-position: left;
+}
+.o:hover {
+  background-position: left;
+}
+
+
+/* .square:active {
+  background-color: #bda5c781;
+} */
+.App {
+  /* width: 40em; */
+  /* margin-top: 5em; */
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  width: 500px;
+  height: 500px;
+  background: rgb(19, 19, 19);
+  padding: 2em;
+  /* border: 5px solid rgb(172, 59, 59); */
+  display: flex;
+  /* margin: auto; */
+  flex-direction: column;
+  border-radius: 20px;
+  /* z-index: -5; */
+  gap: 20px;
+}
+
+.row {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.x {
+  color: red;
+}
+
+.o {
+  color: green;
 }

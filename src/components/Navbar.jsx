@@ -25,6 +25,7 @@ export default function Navbar() {
             <div className="nav-right-side">
                 <NavLink className="about" to="." style={({isActive}) => isActive ? styles : null}>About</NavLink>
                 <NavLink className="games" to="games" style={({isActive}) => isActive ? styles : null}>Games</NavLink>
+                <NavLink className="games" to="tictactoe" style={({isActive}) => isActive ? styles : null}>Free</NavLink>
                 <NavLink className="contact" to="contact" style={({isActive}) => isActive ? styles : null}>Contact</NavLink>
                 <Link className="sign-in" to="login" >Sign In</Link>
             </div>
