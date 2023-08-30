@@ -25,10 +25,10 @@ export default function Navbar() {
             
             <div className="nav-right-side">
                 <NavLink className={({isActive}) => isActive ? "navigationnn" : "navigation"} to="." >Home</NavLink>
-                <NavLink className={({isActive}) => isActive ? "navigationnn" : "navigation"} to="games" >Store</NavLink>
+                <NavLink className={({isActive}) => isActive ? "navigationnn" : "navigation"} to="store" >Store</NavLink>
                 <NavLink className={({isActive}) => isActive ? "navigationnn" : "navigation"} to="tictactoe" >Free</NavLink>
                 <NavLink className={({isActive}) => isActive ? "navigationnn" : "navigation"} to="contact" >Contact</NavLink>
-                <NavLink className={({isActive}) => isActive ? "navigationnn" : "navigation"} to="" >About</NavLink>
+                <NavLink className={({isActive}) => isActive ? "navigationnn" : "navigation"} to="aboutpage" >About</NavLink>
                 <Link className="sign-in" to="login" >Sign In</Link>
             </div>
         </nav>

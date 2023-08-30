@@ -14,11 +14,16 @@ export default function Login() {
                     <p className="sign-desc">Make a account and get exclusive deals, free weekly trials, and access to our monthly rafles and giveaways</p>
                 </div>
             <form className="form" onSubmit={handleSubmit}>
-                <input 
+                {<input 
                     type="email" 
+                    placeholder="username"
+                    className="form--input"
+                />}
+                {<input 
+                    type="text" 
                     placeholder="Email address"
                     className="form--input"
-                />
+                />}
                 <input 
                     type="password" 
                     placeholder="Password"
@@ -41,7 +46,13 @@ export default function Login() {
                 <button 
                     className="form--submit"
                 >
-                    Sign up
+                    Create Account
+                </button>
+                <p className="have-account">Already have an account?</p>
+                <button 
+                    className="form--submit2"
+                >
+                    Sign In
                 </button>
             </form>
             </div>
