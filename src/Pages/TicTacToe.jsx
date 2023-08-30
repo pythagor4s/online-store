@@ -1,4 +1,3 @@
-/* import "../../styles/styles.css" */
 import { useState, useEffect } from "react"
 import Square from "../components/Square";
 import { Patterns } from "../components/Patterns";
