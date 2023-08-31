@@ -5,14 +5,15 @@ import logo from "/src/assets/logo.png"
 export default function Navbar() {
 
 
-    const styles = {
+    /* const styles = {
         paddingBottom: ".5em",
-        borderBottom: "2px solid white",
+        borderBottom: "2px solid #e62878",
         fontWeight: 400,
         color: "white",
-        marginTop: ".6em"
+        marginTop: ".6em",
+        position: "relative"
         
-    }
+    } */
     return(
         <nav>
             <a href="" >
@@ -23,9 +24,11 @@ export default function Navbar() {
             
             
             <div className="nav-right-side">
-                <NavLink className="about" to="." style={({isActive}) => isActive ? styles : null}>About</NavLink>
-                <NavLink className="games" to="games" style={({isActive}) => isActive ? styles : null}>Games</NavLink>
-                <NavLink className="contact" to="contact" style={({isActive}) => isActive ? styles : null}>Contact</NavLink>
+                <NavLink className={({isActive}) => isActive ? "navigationnn" : "navigation"} to="." >Home</NavLink>
+                <NavLink className={({isActive}) => isActive ? "navigationnn" : "navigation"} to="store" >Store</NavLink>
+                <NavLink className={({isActive}) => isActive ? "navigationnn" : "navigation"} to="tictactoe" >Free</NavLink>
+                <NavLink className={({isActive}) => isActive ? "navigationnn" : "navigation"} to="contact" >Contact</NavLink>
+                <NavLink className={({isActive}) => isActive ? "navigationnn" : "navigation"} to="aboutpage" >About</NavLink>
                 <Link className="sign-in" to="login" >Sign In</Link>
             </div>
         </nav>

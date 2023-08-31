@@ -60,12 +60,6 @@ export default function Games() {
             : alert("Order placed sucessfully"))
      }
 
-     
-
-
-
- 
-
     return(
         <div className="wrapper">
             <div className="cart-holder">
