@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 
 export default function Login() {
 
@@ -15,8 +16,8 @@ export default function Login() {
                 </div>
             <form className="form" onSubmit={handleSubmit}>
                 {<input 
-                    type="email" 
-                    placeholder="username"
+                    type="text" 
+                    placeholder="Username"
                     className="form--input"
                 />}
                 {<input 
@@ -34,7 +35,6 @@ export default function Login() {
                     placeholder="Confirm password"
                     className="form--input"
                 />
-                
                 <div className="form--marketing">
                     <input
                         id="okayToEmail"
@@ -49,11 +49,11 @@ export default function Login() {
                     Create Account
                 </button>
                 <p className="have-account">Already have an account?</p>
-                <button 
+                <Link to="../sign" 
                     className="form--submit2"
                 >
                     Sign In
-                </button>
+                </Link>
             </form>
             </div>
         </div>

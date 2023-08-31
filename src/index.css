@@ -105,7 +105,7 @@
 
 .content p:nth-of-type(2) {
   color: rgb(254, 255, 255);
-  font-size: .9rem;
+  font-size: .8rem;
   user-select: none;
   margin-top: .5em;
   margin-bottom: auto;
@@ -934,7 +934,8 @@ nav a {
 
 .form--marketing {
   color: white;
-
+  display: flex;
+  align-items: center;
 }
 
 
@@ -971,6 +972,8 @@ nav a {
   /* background: linear-gradient(111deg, #550494 0%, #037B96 100%); */
   background-size: 130%;
   background-position: left;
+  display: flex;
+  justify-content: center;
   text-decoration: none;
   border-radius: 4px;
   padding: .6em 1.2em;
@@ -991,7 +994,11 @@ nav a {
 input[type="checkbox"] {
   cursor: pointer;
   margin-right: 1em;
+  width: 15px;
+  height: 15px;
 }
+
+
 
 /* .signup {
   
@@ -1020,6 +1027,21 @@ input[type="checkbox"] {
   margin-bottom: 2em;
 }
 
+.forgot-pas {
+  background: linear-gradient(76deg, #f5eff2 0%, #cbc5c9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.forgot-pas:hover {
+  background: #e62877;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 .contact-wrapper {

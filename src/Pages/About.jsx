@@ -12,7 +12,7 @@ export default function About() {
                     <div className="hero-container">
                         <img className="hero-image" src="/src/assets/hero.jpg" />
                         <div className="hero-description">Welcome to the beating heart of gaming prowess, the Hero Page. Dive into a universe where pixels transform into extraordinary heroes and epic sagas await your command. From nostalgic icons to modern marvels, discover characters that define generations. Rent or own, the choice is yours. Level up your gaming experience with GameStation, where heroes come alive!</div>
-                        <Link to="games" className="button">Visit the store</Link>
+                        <Link to="store" className="button">Visit the store</Link>
                     </div> 
                     
             </div>
