@@ -1,5 +1,5 @@
 INSTALATION:
-1) cd into online store
+1) cd into "online store"
 2) npm install
 3) npm run dev
 
