@@ -12,13 +12,12 @@
   background-color: rgb(77, 77, 77);
   background-size: 150%;
   background-position: top;
-  border-radius: 30px; /* Rounded corners of the scrollbar thumb */
+  border-radius: 30px;
   transition: background-position 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background-position: bottom;
- /* Darker color when hovering over the thumb */
 }
 
 
